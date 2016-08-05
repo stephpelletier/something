@@ -21,8 +21,8 @@ public class Character {
 
     protected int generateStat() {
         Random random = new Random();
-        int stat = random.nextInt() % (18 - 4 + 1);
-        return 4 + stat;
+        int stat = random.nextInt((18 - 4) + 1) + 4;
+        return stat;
     }
 
     public int getCharisma() {
