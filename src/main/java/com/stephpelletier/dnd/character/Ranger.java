@@ -1,8 +1,11 @@
-package com.stephpelletier.dnd;
+package com.stephpelletier.dnd.character;
 
 import java.util.Random;
 
-public class Character {
+/**
+ * Created by stephane on 2016-08-04.
+ */
+public class Ranger implements Character {
     private int strength;
     private int dexterity;
     private int intelligence;
@@ -10,7 +13,7 @@ public class Character {
     private int wisdom;
     private int charisma;
 
-    public Character() {
+    public Ranger() {
         strength = generateStat();
         dexterity = generateStat();
         intelligence = generateStat();
@@ -25,50 +28,62 @@ public class Character {
         return stat;
     }
 
+    @Override
     public int getCharisma() {
-        return charisma;
+        return this.charisma;
     }
 
+    @Override
     public void setCharisma(int charisma) {
         this.charisma = charisma;
     }
 
+    @Override
     public int getStrength() {
-        return strength;
+        return this.strength;
     }
 
+    @Override
     public void setStrength(int strength) {
         this.strength = strength;
     }
 
+    @Override
     public int getDexterity() {
-        return dexterity;
+        return this.dexterity;
     }
 
+    @Override
     public void setDexterity(int dexterity) {
         this.dexterity = dexterity;
     }
 
+    @Override
     public int getIntelligence() {
-        return intelligence;
+        return this.intelligence;
     }
 
+    @Override
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
 
+    @Override
     public int getConstitution() {
-        return constitution;
+        return this.constitution;
     }
 
+    @Override
     public void setConstitution(int constitution) {
         this.constitution = constitution;
     }
 
+    @Override
     public int getWisdom() {
-        return wisdom;
+        return this.wisdom;
     }
 
+    @Override
     public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
