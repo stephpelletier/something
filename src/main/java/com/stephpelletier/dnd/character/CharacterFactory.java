@@ -7,7 +7,7 @@ public class CharacterFactory  {
             case "Bard": return new Bard();
             case "Cleric": return new Cleric();
             case "Druid": return new Druid();
-            case "Fighter": return new Druid();
+            case "Fighter": return new Fighter();
             case "Monk": return new Monk();
             case "Paladin": return new Paladin();
             case "Ranger": return new Ranger();
