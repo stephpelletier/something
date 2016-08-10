@@ -1,6 +1,6 @@
 package com.stephpelletier.dnd;
 
-import com.stephpelletier.dnd.character.CharacterInterface;
+import com.stephpelletier.dnd.character.Character;
 import com.stephpelletier.dnd.character.CharacterFactory;
 
 import java.util.Scanner;
@@ -22,7 +22,7 @@ public class Main {
                 case 1:
                     CharacterFactory characterFactory = new CharacterFactory();
                     try {
-                        CharacterInterface character = characterFactory.createCharacter("Paladin");
+                        Character character = characterFactory.createCharacter("Paladin");
                         System.out.println("Strengh: "+character.getStrength());
                         System.out.println("Dexterity: "+character.getDexterity());
                         System.out.println("Intelligence: "+character.getIntelligence());

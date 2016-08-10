@@ -4,7 +4,7 @@ package com.stephpelletier.dnd.character;
  * Created by stephane on 2016-08-04.
  */
 public class CharacterFactory  {
-    public CharacterInterface createCharacter(String characterClass) throws Exception {
+    public Character createCharacter(String characterClass) throws Exception {
         switch (characterClass){
             case "Barbarian": return new Barbarian();
             case "Bard": return new Bard();
