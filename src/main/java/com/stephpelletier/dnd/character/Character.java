@@ -2,9 +2,6 @@ package com.stephpelletier.dnd.character;
 
 import java.util.Random;
 
-/**
- * Created by stephane on 2016-08-09.
- */
 public abstract class Character {
     private int strength;
     private int dexterity;
