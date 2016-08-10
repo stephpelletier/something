@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by stephane on 2016-08-04.
  */
-public class Barbarian implements Character{
+public class Barbarian implements CharacterInterface {
     private int strength;
     private int dexterity;
     private int intelligence;
