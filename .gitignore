@@ -6,8 +6,8 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-.idea/
-target/
+.idea/*
+target/*
 
 ## File-based project format:
 *.iws
@@ -36,4 +36,4 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
-/.idea/
+/.idea/*
