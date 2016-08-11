@@ -72,4 +72,6 @@ public abstract class Character {
     public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
+
+    public abstract String getCharacterClass();
 }
