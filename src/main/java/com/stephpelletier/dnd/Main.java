@@ -23,12 +23,12 @@ public class Main {
                     CharacterFactory characterFactory = new CharacterFactory();
                     try {
                         Character character = characterFactory.createCharacter("Paladin");
-                        System.out.println("Strengh: "+character.getStrength());
-                        System.out.println("Dexterity: "+character.getDexterity());
-                        System.out.println("Intelligence: "+character.getIntelligence());
-                        System.out.println("Constitution: "+character.getConstitution());
-                        System.out.println("Charisma: "+character.getCharisma());
-                        System.out.println("Wisdom: "+character.getWisdom());
+                        System.out.println("Strengh: "+character.getStrengthScore());
+                        System.out.println("Dexterity: "+character.getDexterityScore());
+                        System.out.println("Intelligence: "+character.getIntelligenceScore());
+                        System.out.println("Constitution: "+character.getConstitutionScore());
+                        System.out.println("Charisma: "+character.getCharismaScore());
+                        System.out.println("Wisdom: "+character.getWisdomScore());
                     } catch (Exception e) {
                         System.out.println("Invalid character class.");
                     }

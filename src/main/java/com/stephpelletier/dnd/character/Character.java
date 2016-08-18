@@ -1,77 +1,53 @@
 package com.stephpelletier.dnd.character;
 
-import java.util.Random;
-
 public abstract class Character {
-    private int strength;
-    private int dexterity;
-    private int intelligence;
-    private int constitution;
-    private int wisdom;
-    private int charisma;
+    private Ability strength;
+    private Ability dexterity;
+    private Ability intelligence;
+    private Ability constitution;
+    private Ability wisdom;
+    private Ability charisma;
 
     public Character() {
-        strength = generateStat();
-        dexterity = generateStat();
-        intelligence = generateStat();
-        constitution = generateStat();
-        wisdom = generateStat();
-        charisma = generateStat();
+        strength = new Ability();
+        dexterity = new Ability();
+        intelligence = new Ability();
+        constitution = new Ability();
+        wisdom = new Ability();
+        charisma = new Ability();
     }
 
-    protected int generateStat() {
-        Random random = new Random();
-        int stat = random.nextInt((18 - 4) + 1) + 4;
-        return stat;
+    public int getCharismaScore() {
+        return this.charisma.getScore();
     }
 
-    public int getCharisma() {
-        return this.charisma;
+    public int getCharismaModifier(){return this.charisma.getModifier();}
+
+    public int getStrengthScore() {
+        return this.strength.getScore();
     }
 
-    public void setCharisma(int charisma) {
-        this.charisma = charisma;
+    public int getStrengthModifier(){return this.strength.getModifier();}
+
+    public int getDexterityScore() {
+        return this.dexterity.getScore();
     }
 
-    public int getStrength() {
-        return this.strength;
+    public int getDexterityModifier(){return this.dexterity.getModifier();}
+
+    public int getIntelligenceScore() {return this.intelligence.getScore();}
+
+    public int getIntelligenceModifier(){return this.intelligence.getModifier();}
+
+    public int getConstitutionScore() {
+        return this.constitution.getScore();
     }
 
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
+    public int getConstitutionModifier(){return this.constitution.getModifier();}
 
-    public int getDexterity() {
-        return this.dexterity;
-    }
+    public int getWisdomScore() {return this.wisdom.getScore();}
 
-    public void setDexterity(int dexterity) {
-        this.dexterity = dexterity;
-    }
-
-    public int getIntelligence() {
-        return this.intelligence;
-    }
-
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
-    }
-
-    public int getConstitution() {
-        return this.constitution;
-    }
-
-    public void setConstitution(int constitution) {
-        this.constitution = constitution;
-    }
-
-    public int getWisdom() {
-        return this.wisdom;
-    }
-
-    public void setWisdom(int wisdom) {
-        this.wisdom = wisdom;
-    }
+    public int getWisdomModifier(){return this.wisdom.getModifier();}
 
     public abstract String getCharacterClass();
 }
