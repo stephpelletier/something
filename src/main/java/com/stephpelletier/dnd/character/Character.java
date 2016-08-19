@@ -49,5 +49,7 @@ public abstract class Character {
 
     public int getWisdomModifier(){return this.wisdom.getModifier();}
 
+    public int getCarryingCapacity(){return this.strength.getScore() * 15;}
+
     public abstract String getCharacterClass();
 }
