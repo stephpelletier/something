@@ -13,11 +13,15 @@ public class Ability {
         this.score = random.nextInt((18 - 4) + 1) + 4;
     }
 
+    public Ability(int score){
+        this.score = score;
+    }
+
     public int getScore() {
         return this.score;
     }
 
     public int getModifier() {
-        return (int)Math.floor((this.score / 2) - 10);
+        return (int)Math.floor((this.score / 2) - 5);
     }
 }
